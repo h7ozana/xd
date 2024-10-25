@@ -4,11 +4,12 @@
 sudo apt install -y python3 python3-pip python3.10-venv ghostscript
 
 # 가상 환경 생성 및 활성화
-python3 -m venv test
-source test/bin/activate
+python3 -m venv test1234
+source test1234/bin/activate
 
-# PyTorch 설치 (필요한 버전으로 변경)
-pip install torch torchvision torchaudio
+# PyTorch 설치 (필요한 버전으로 변경) https://pytorch.org/get-started/locally/
+# pip install torch torchvision torchaudio
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 
 # Python 코드 실행
 python -c '
