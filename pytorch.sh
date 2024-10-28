@@ -4,7 +4,7 @@ sudo apt install -y python3 python3-pip python3.10-venv ghostscript
 python3 -m venv test1
 source test1/bin/activate
 
-pip3 install torch torchvision torchaudio matplotlib progress
+pip3 install torch torchvision torchaudio matplotlib progress --index-url https://download.pytorch.org/whl/cu121
 cd pytorch-classification
 
 machine_name="xd"
