@@ -1,5 +1,5 @@
 #!/bin/bash
 sudo docker-compose up -d
 
-cp ./prometheus.yaml ./prometheus
+cp -aRp ./prometheus.yaml ./prometheus
 
