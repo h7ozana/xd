@@ -47,20 +47,20 @@ services:
       - GF_SECURITY_ADMIN_PASSWORD=admin  # Grafana 관리자 비밀번호 설정
     restart: unless-stopped
  
-  tensorflow:
-    image: duddlf456/tensorflow_pytorch:gpu-jupyter
-    runtime: nvidia
-    container_name: tensorflow
-    environment:
-      - NVIDIA_VISIBLE_DEVICES=all
-      - JUPYTER_TOKEN=G0_evnGAuPPKvfb0dCEVbg  # Jupyter 노트북 접근을 위한 토큰 설정
-    ports:
-      - "8888:8888"  # Jupyter 노트북 포트
-    volumes:
-      - ./tensorflow:/tf/notebooks  # 현재 디렉토리의 notebooks 폴더를 컨테이너와 공유
-    command: >
-      jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root --NotebookApp.token=G0_evnGAuPPKvfb0dCEVbg
-    restart: unless-stopped
+  # tensorflow:
+  #   image: duddlf456/tensorflow_pytorch:gpu-jupyter
+  #   runtime: nvidia
+  #   container_name: tensorflow
+  #   environment:
+  #     - NVIDIA_VISIBLE_DEVICES=all
+  #     - JUPYTER_TOKEN=G0_evnGAuPPKvfb0dCEVbg  # Jupyter 노트북 접근을 위한 토큰 설정
+  #   ports:
+  #     - "8888:8888"  # Jupyter 노트북 포트
+  #   volumes:
+  #     - ./tensorflow:/tf/notebooks  # 현재 디렉토리의 notebooks 폴더를 컨테이너와 공유
+  #   command: >
+  #     jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root --NotebookApp.token=G0_evnGAuPPKvfb0dCEVbg
+  #   restart: unless-stopped
 
       #  pytorch:
         #  image: pytorch/pytorch:latest
