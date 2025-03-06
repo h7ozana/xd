@@ -2,6 +2,9 @@
 sudo git clone https://github.com/wilicc/gpu-burn
 cd gpu-burn
 make
+./gpu_burn 60
+# CUDA_VISIBLE_DEVICES=0 ./gpu_burn 60
+
 
 # sudo docker build -t gpu_burn .
 # cd ..
