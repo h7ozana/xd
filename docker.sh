@@ -6,7 +6,7 @@ distribution=$(. /etc/os-release;echo $ID$VERSION_ID) \
 sudo apt update
 sudo apt install nvidia-docker2 -y
 sudo systemctl restart docker
-
+sudo usermod -aG docker $USER
 
 #compose
 sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
