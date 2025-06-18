@@ -5,7 +5,7 @@ make
 ./gpu_burn 60
 
 # CUDA_VISIBLE_DEVICES=0 ./gpu_burn 60
-
+123123
 
 # sudo docker build -t gpu_burn .
 # cd ..
