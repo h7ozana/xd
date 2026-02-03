@@ -24,4 +24,4 @@ history -c
 #24v에서 오류, 브로큰 / 아래는 22에서 따오는거
 #wget http://security.ubuntu.com/ubuntu/pool/universe/n/ncurses/libtinfo5_6.3-2ubuntu0.1_amd64.deb
 #sudo dpkg -i libtinfo5_6.3-2ubuntu0.1_amd64.deb
-#sudo apt -y install cuda-toolkit-12-4
+#sudo apt -y install cuda-toolkit-12-4 민철중3ㅇ32
